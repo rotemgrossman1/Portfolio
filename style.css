@@ -81,7 +81,7 @@ main{
     width: 90%;
     margin: 20px auto;
 }
-.colInfo-center{
+.profile .colInfo-center{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -89,7 +89,7 @@ main{
     align-items: center;
     flex: 2;
 }
-.colInfo-left{
+.profile .colInfo-left{
     display: flex;
     flex-direction: column;
     flex: 3;
@@ -292,6 +292,196 @@ a{
     margin-bottom: 20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
 }
+.get-in-touch{
+    
+    background-color: rgb(241, 234, 227);
+    display: flex;
+    border-radius: 20px;
+    padding-left: 100px;
+    width: 90%;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    
+}
 .fillout{
+    padding: 0rem 3rem;
+    background-color: rgb(241, 234, 227);
+    display: flex;
+    border-radius: 20px;
+    padding-left: 100px;
+    width: 90%;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.fillout .colInfo-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+}
+.fillout .colInfo-left{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.fillout .colInfo-left button {
 
+    display: flex;
+    align-self: flex-start; 
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif; 
+    background-color: rgb(98, 79, 205);
+}
+
+.fillout-title{
+    display: flex;
+    flex-direction: column;
+    
+    padding: 20px;
+    font-size: 25px;
+    flex:1 0 100%;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+}
+
+        /* Container layout using Flexbox to stack each form item vertically */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;         /* Uniform vertical spacing between input fields */
+            width: 100%;
+            max-width: 550px;  /* Keeps the form at a neat, readable width */
+        }
+
+        /* Individual field wrappers using Flexbox for label-to-input flow */
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;          /* Minimal crisp spacing between label and input */
+        }
+
+        /* Label text decoration */
+        .form-group label {
+            font-weight: 600;
+            color: #2d3748;    /* Professional slate dark gray */
+            font-size: 15px;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        /* Inputs and Message textbox layout */
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cbd5e1; /* Soft, clean border outline */
+            border-radius: 6px;       /* Sleek subtle rounded corners */
+            font-size: 16px;
+            background-color: #ffffff;
+            box-sizing: border-box;    /* Keeps padding contained safely inside width */
+        }
+
+        /* Interactive focus highlight when clicking into a field */
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #2563eb;    /* Clean blue focus accent */
+        }
+
+        /* Limits message field sizing */
+        .form-group textarea {
+            resize: vertical;
+            min-height: 140px;
+        }
+
+        /* Primary "Send Message" action button layout */
+        .submit-btn {
+            align-self: flex-start;   /* Flex control forcing button to hug content left */
+            background-color: #2563eb; /* Vivid, clean blue */
+            color: #ffffff;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: 600;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.15s ease-in-out;
+        }
+
+        /* Smooth active state when interacting with button */
+        .submit-btn:hover {
+            background-color: #1d4ed8; /* Slightly deeper blue shade */
+        }
+
+/* Container arrangement */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Base flex rules for row communication alignment */
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;                  /* Keeps emoji right next to text */
+    text-decoration: none;
+    color: #2d3748;             /* Matches your form text styling */
+    transition: color 0.2s ease;
+}
+
+.contact-link:hover {
+    color: #2563eb;             /* Changes text color dynamically on hover */
+}
+
+/* Emoji explicit scaling */
+.contact-emoji {
+    font-size: 20px;
+    line-height: 1;
+}
+
+/* Details label spacing adjustment */
+.contact-detail {
+    font-size: 16px;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Social links container row layout */
+.contact-bottom-line {
+    display: flex;
+    gap: 16px;
+    margin-top: 12px;
+}
+
+/* Simple circular background container using Flexbox to center vectors */
+.blue-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: #2563eb;   /* Vibrant blue match */
+    border-radius: 50%;          /* Forces absolute circle shape */
+    color: #ffffff;              /* Sets SVG fill color context */
+    transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.blue-circle:hover {
+    background-color: #1d4ed8;   /* Interactive hover shade change */
+    transform: scale(1.05);      /* Subtle pulse on interactive hover */
+}
+
+/* Scale Vector assets within parent blue wrapper frame safely */
+.social-icon {
+    width: 22px;
+    height: 22px;
 }
