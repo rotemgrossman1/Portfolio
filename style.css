@@ -79,6 +79,7 @@ main{
     border-radius: 20px;
     padding-left: 100px;
     width: 95%;
+    margin: 3px;
 }
 .colInfo-center{
     display: flex;
@@ -86,14 +87,14 @@ main{
     justify-content: center;
     justify-content: space-around;
     align-items: center;
-    flex: 1;
+    flex: 2;
 }
 .colInfo-left{
     display: flex;
     flex-direction: column;
-    flex: 2;
+    flex: 3;
 }
-.profile .colInfo-left h2{
+.colInfo-left h2{
     display: flex;
     flex-direction: column;
     
@@ -143,6 +144,58 @@ main{
 }
 
 .personal{
+    margin: 3px;
+    padding: 4rem 0;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    border-radius: 20px;
+    padding-left: 100px;
+    width: 95%;
+}
+.personal>.colInfo-left{
+    flex: 4;
+}
+.personal>.colInfo-center{
+    flex: 3;
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    width:400px;
+    padding: 2rem 0;
+}
+.skill-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skill{
+    padding: 20px;
+    display: flex;
+}
+.mastering-container{
+    width: 150px;
+    height: 8px;
+    display: flex;
+    gap: 20px;
+    border-radius: 6px;
+    border: 1px solid rgb(117, 119, 236);
+}
+
+.mastering1{
+    background-color: rgb(117, 119, 236);
+    width: 100%;
+
+}
+.mastering2{
+    background-color: rgb(117, 119, 236);
+    width:80%;
+
+}
+.mastering3{
+    background-color: rgb(117, 119, 236);
+    width: 60%;
 
 }
 .projects{
