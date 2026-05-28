@@ -20,8 +20,10 @@ header{
 }
 .stickyTop{
     justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     display: flex;
-    width: 100%;
+    width: 90%;
 
 }
 .dropdowns{
@@ -38,7 +40,27 @@ header{
     font-weight: bold;
     color:rgb(46, 46, 165);
 }
-.dropdowns{
+.dropdown{
     display: flex;
     gap: 30px;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+/* .dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  position: absolute;
+  background-color: #ddd;
+  padding: 20px;
+  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+  display: none;
+} */
+
+.dropdown:hover {
+    background-color: rgb(194, 194, 231);
+  
+  display: block;
 }
