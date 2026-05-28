@@ -15,7 +15,8 @@ header{
     align-items: center;
     background-color: white;
     padding : 0 10px;
-    width: 100%;
+    width: 97%;
+    border-radius: 10px;
 
 }
 .stickyTop{
@@ -61,6 +62,92 @@ header{
 
 .dropdown:hover {
     background-color: rgb(194, 194, 231);
-  
-  display: block;
+    display: block;
+}
+
+main{
+    margin-top: 22px;
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.profile{
+    padding: 4rem 0;
+    background-color: rgb(241, 234, 227);
+    display: flex;
+    border-radius: 20px;
+    padding-left: 100px;
+    width: 95%;
+}
+.colInfo-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+}
+.colInfo-left{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+.profile .colInfo-left h2{
+    display: flex;
+    flex-direction: column;
+    
+    padding: 20px;
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+}
+
+.profile-info{
+    display: flex;
+    flex-direction: column;
+    text-align: justify; 
+    gap: 20px;
+    padding: 20px;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+}
+.profile .colInfo-left button {
+
+    display: flex;
+    align-self: flex-start; 
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif; 
+    background-color: rgb(98, 79, 205);
+}
+.avatar {
+    width: 280px;         
+    height: 280px;
+    border-radius: 50%;
+    border: 8px solid white; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); 
+    background-color: white; 
+    overflow: hidden;  
+    
+}
+.profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   
+}
+
+.personal{
+
+}
+.projects{
+
+}
+.fillout{
+
 }
