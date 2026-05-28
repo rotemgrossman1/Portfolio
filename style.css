@@ -311,8 +311,9 @@ a{
     padding-left: 100px;
     width: 90%;
     margin: 20px auto;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 60px;
 }
 .fillout .colInfo-center{
     display: flex;
@@ -426,7 +427,7 @@ a{
 .contact-container {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    /* gap: 16px; */
 }
 
 /* Base flex rules for row communication alignment */
@@ -443,23 +444,20 @@ a{
     color: #2563eb;             /* Changes text color dynamically on hover */
 }
 
-/* Emoji explicit scaling */
-.contact-emoji {
-    font-size: 20px;
-    line-height: 1;
-}
+
 
 /* Details label spacing adjustment */
 .contact-detail {
     font-size: 16px;
     font-family: system-ui, -apple-system, sans-serif;
+    padding: 10px;
 }
 
 /* Social links container row layout */
 .contact-bottom-line {
     display: flex;
     gap: 16px;
-    margin-top: 12px;
+    margin-top: 22px;
 }
 
 /* Simple circular background container using Flexbox to center vectors */
