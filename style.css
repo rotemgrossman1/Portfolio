@@ -298,7 +298,7 @@ a{
     display: flex;
     border-radius: 20px;
     padding-left: 100px;
-    width: 90%;
+    width: 95%;
     margin: 20px auto;
     flex-wrap: wrap;
     
@@ -482,4 +482,12 @@ a{
 .social-icon {
     width: 22px;
     height: 22px;
+}
+footer {
+    background-color: #1a2332; /* Matches the dark blue background */
+    color: #ffffff;
+    text-align: center;
+    padding: 50px;
+    width: 100%;
+
 }
