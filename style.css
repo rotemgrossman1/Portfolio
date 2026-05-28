@@ -1,0 +1,44 @@
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: antiquewhite;
+    width: 1200px;
+    height: 1000px;
+}
+header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: white;
+    padding : 0 10px;
+    width: 100%;
+
+}
+.stickyTop{
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+
+}
+.dropdowns{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 40px;
+    
+}
+.my-name{
+    flex: 1;
+    font-size: 20px;
+    font-weight: bold;
+    color:rgb(46, 46, 165);
+}
+.dropdowns{
+    display: flex;
+    gap: 30px;
+}
