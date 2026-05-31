@@ -232,12 +232,12 @@ main{
 
 .personal{
     flex-wrap: wrap;
-    margin: 20px auto;
+    /* margin: 20px auto; */
     padding: 4rem 3rem;
     background-color: rgb(255, 255, 255);
     display: flex;
     border-radius: 20px;
-    padding-left: 100px;
+    padding-left: 10%;
     width: 100%;
     box-sizing: border-box;
 }
@@ -395,21 +395,33 @@ a{
     width: 100%;
     margin: 20px auto;
     flex-wrap: wrap;
-    padding: 4rem 3rem;
+    padding: 2rem 1rem;
     box-sizing: border-box;
 }
 .fillout{
-    padding: 4rem 3rem;
+    padding: 1rem 0rem;
     box-sizing: border-box;
     background-color: rgb(241, 234, 227);
     display: flex;
     border-radius: 20px;
     padding-left: 100px;
+    padding-right: 100px;
     width: 100%;
     /* margin: 20px auto; */
     flex-wrap: nowrap;
-    align-items: flex-start;
-    gap: 60px;
+    align-items: stretch;
+    /* gap: 60px; */
+}
+@media (max-width: 768px){
+    .fillout{
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left:15%;
+        padding-right: 15%;
+    }
+   
 }
 .fillout .colInfo-center{
     display: flex;
@@ -417,10 +429,12 @@ a{
     justify-content: center;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
     flex: 1;
 }
 .fillout .colInfo-left{
     display: flex;
+    width: 100%;
     flex-direction: column;
     flex: 1;
 }
@@ -457,7 +471,7 @@ a{
             flex-direction: column;
             gap: 20px;         /* Uniform vertical spacing between input fields */
             width: 100%;
-            max-width: 550px;  /* Keeps the form at a neat, readable width */
+            max-width: 100%;  /* Keeps the form at a neat, readable width */
         }
 
         /* Individual field wrappers using Flexbox for label-to-input flow */
