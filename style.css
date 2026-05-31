@@ -135,8 +135,9 @@ header{
 .hamburger .bar {
     height: 10px;
     width: 100%;
-    background-color: #333;
-    border-radius: 5px;
+    margin: 2px;
+    background-color: #787272;
+    /* border-radius: 5px; */
     /* transition: all 0.3s ease; */
 }
 
@@ -153,7 +154,7 @@ header{
             position: absolute;
             top: 100%;
             right: 0;
-            width:90%;
+            width:70%;
             /* height: 120px; */
             /* width: 25%; */
 
@@ -165,6 +166,8 @@ header{
         justify-content: center;
         width:90%;
         padding: 40px;
+        margin: 2px;
+        border: solid rgb(194, 194, 231) 1px;
     }
     .dropdowns.open{
         display: flex;
@@ -172,9 +175,7 @@ header{
     .hamburger:hover {
 
         background-color: rgb(194, 194, 231);
-            
-        
-        display: block;
+        /* display: block; */
     }
 }
 /* Add scroll margins so the fixed header doesn't cover section titles */
@@ -353,7 +354,7 @@ main{
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
-    margin: 20px auto;
+    /* margin: 20px auto; */
     padding: 4rem 1rem;
     background-color: rgb(241, 234, 227);
     display: flex;
@@ -447,12 +448,12 @@ a{
 }
 .get-in-touch{
     
-    background-color: rgb(241, 234, 227);
+    background-color: rgb(255, 255, 255);
     display: flex;
     border-radius: 20px;
     padding-left: 100px;
     width: 100%;
-    margin: 20px auto;
+    /* margin: 20px auto; */
     flex-wrap: wrap;
     padding: 2rem 1rem;
     box-sizing: border-box;
@@ -460,7 +461,7 @@ a{
 .fillout{
     padding: 1rem 0rem;
     box-sizing: border-box;
-    background-color: rgb(241, 234, 227);
+    background-color: rgb(255, 255, 255);
     display: flex;
     border-radius: 20px;
     padding-left: 100px;
@@ -523,6 +524,7 @@ a{
     text-align: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
 }
+
 
         /* Container layout using Flexbox to stack each form item vertically */
         .contact-form {
@@ -603,7 +605,7 @@ a{
 .contact-link {
     display: flex;
     align-items: center;
-    gap: 12px;                  /* Keeps emoji right next to text */
+    /* gap: 12px;                  Keeps emoji right next to text */
     text-decoration: none;
     color: #2d3748;             /* Matches your form text styling */
     transition: color 0.2s ease;
