@@ -14,6 +14,11 @@
                 <div class = "my-name">
                     <h2>Rotem Grossman</h2>
                 </div>
+                <button class = "hamburger" aria-label="menue">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
                 <div class="dropdowns">
                     <a href="?" class="dropdown">Home</a>
                     <a href="#about" class="dropdown">About</a>
@@ -197,7 +202,22 @@
 
             2026 Rotem Grossman. All rights reserved.
         </footer>
-        
+        <script>
+            const hamburger = document.querySelector('.hamburger');
+            const dropdowns = document.querySelector('.dropdowns');
+
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('open');
+                dropdowns.classList.toggle('open');
+            });
+
+            document.querySelectorAll('.dropdown').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('open');
+                    dropdowns.classList.remove('open');
+                });
+            });
+        </script>
     </body>
 </div>
 </html>

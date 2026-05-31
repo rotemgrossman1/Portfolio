@@ -69,9 +69,11 @@ header{
     padding-left: 10%;
     padding-right: 10%;
     border-radius: 10px;
+    position: relative;
     /* margin: 20px auto; */
 
 }
+
 
 
 
@@ -117,7 +119,48 @@ header{
     font-weight: 500;
     /* cursor: pointer; */
 }
+/*hide hamburger on desktop*/
+.hamburger {
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 18px;
+    padding: 0;
+}
 
+.hamburger .bar {
+    height: 10px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 5px;
+    /* transition: all 0.3s ease; */
+}
+
+/*handle menue in phone*/
+@media (max-width:769px){
+    .hamburger{
+        display: flex;
+    }
+
+    .dropdowns{
+        display:none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 200px;
+
+        background-color: white;
+        border-radius: 8px;
+    }
+    .dropdowns.open{
+        display: flex;
+    }
+}
 /* Add scroll margins so the fixed header doesn't cover section titles */
 /* .personal, 
 .projects, 
