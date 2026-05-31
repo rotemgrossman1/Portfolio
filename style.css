@@ -231,6 +231,7 @@ main{
 
 
 .personal{
+    flex-wrap: wrap;
     margin: 20px auto;
     padding: 4rem 3rem;
     background-color: rgb(255, 255, 255);
@@ -240,12 +241,12 @@ main{
     width: 100%;
     box-sizing: border-box;
 }
-.personal>.colInfo-left{
+/* .personal>.colInfo-left{
     flex: 4;
 }
 .personal>.colInfo-center{
     flex: 3;
-}
+} */
 
 .skills{
     display: flex;
