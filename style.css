@@ -1,6 +1,35 @@
 html {
     scroll-behavior: smooth;
 }
+@media screen and (max-width: 768px){
+.col-sm-1 {width: 8.33%;}
+.col-sm-2 {width: 16.66%;}
+.col-sm-3 {width: 25%;}
+.col-sm-4 {width: 33.33%;}
+.col-sm-5 {width: 41.66%;}
+.col-sm-6 {width: 50%;}
+.col-sm-7 {width: 58.33%;}
+.col-sm-8 {width: 66.66%;}
+.col-sm-9 {width: 75%;}
+.col-sm-10 {width: 83.33%;}
+.col-sm-11 {width: 91.66%;}
+.col-sm-12 {width: 100%;}
+}
+
+@media screen and (min-width: 768px) {
+  .col-lg-1 {width: 8.33%;}
+  .col-lg-2 {width: 16.66%;}
+  .col-lg-3 {width: 25%;}
+  .col-lg-4 {width: 33.33%;}
+  .col-lg-5 {width: 41.66%;}
+  .col-lg-6 {width: 50%;}
+  .col-lg-7 {width: 58.33%;}
+  .col-lg-8 {width: 66.66%;}
+  .col-lg-9 {width: 75%;}
+  .col-lg-10 {width: 83.33%;}
+  .col-lg-11 {width: 91.66%;}
+  .col-lg-12 {width: 100%;}
+}
 .site-container {
   width: 100%;
   max-width: 1200px; /* Sets the standard maximum width for your content blocks */
@@ -37,13 +66,13 @@ header{
     background-color: white;
     
     width: 100%;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
     border-radius: 10px;
     /* margin: 20px auto; */
 
 }
-/*twice*/
+
 
 
 
@@ -66,7 +95,7 @@ header{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    padding: 0 40px;
+    padding: 0 4%;
     
 }
 .my-name{
@@ -77,16 +106,16 @@ header{
 }
 .dropdown{
     display: flex;
-    gap: 30px;
-    padding: 10px 20px;
+    /* gap: 30px; */
+    padding: 1% 4%;
     border-radius: 6px;
 }
-/* Ensure the navbar links retain their text styling and look like clickable items */
+/* Ensure the navbar links retain sstheir text styling and look like clickable items */
 .dropdowns a.dropdown {
     color: #2e46a5; /* Matches your name theme color */
     text-decoration: none;
     font-weight: 500;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 /* Add scroll margins so the fixed header doesn't cover section titles */
@@ -95,20 +124,7 @@ header{
 .get-in-touch {
     scroll-margin-top: 80px; /* Adjust this value based on your header's actual height */
 
-.contact-me-btn {
-    display: inline-flex;
-    align-self: flex-start; 
-    margin-left: 20px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px;
-    padding: 10px 20px;
-    flex-wrap: wrap;
-    color: white;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif; 
-    background-color: rgb(98, 79, 205);
-}
+
 
 /* .dropdown {
   position: relative;
@@ -134,14 +150,16 @@ main{
     flex-direction: column;
     width: 100%;
 }
+
 .profile{
     padding: 4rem 3rem;
     background-color: rgb(241, 234, 227);
     display: flex;
     border-radius: 20px;
-    padding-left: 100px;
+    padding-left: 10%;
     width: 100%;
     /* margin: 20px auto; */
+    flex-wrap: wrap;
     box-sizing: border-box;
 }
 .profile .colInfo-center{
@@ -150,18 +168,20 @@ main{
     justify-content: center;
     justify-content: space-around;
     align-items: center;
-    flex: 2;
+    box-sizing: border-box;
+    /* flex: 2; */
 }
 .profile .colInfo-left{
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    flex: 3;
+    /* flex: 3; */
 }
 .colInfo-left h2{
     display: flex;
     flex-direction: column;
     
-    padding: 20px;
+    /* padding: 20px; */
     font-size: 25px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
 }
@@ -171,15 +191,15 @@ main{
     flex-direction: column;
     text-align: justify; 
     gap: 20px;
-    padding: 20px;
+    /* padding: 20px; */
+    padding-bottom: 3%;
     font-size: 20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
 }
-.profile .colInfo-left button {
-
-    display: flex;
+.contact-me-btn {
+    display: inline-flex;
     align-self: flex-start; 
-    margin-left: 20px;
+    /* margin-left: 3%; */
     justify-content: center;
     align-items: center;
     border-radius: 6px;
@@ -191,8 +211,10 @@ main{
     background-color: rgb(98, 79, 205);
 }
 .avatar {
-    width: 280px;         
-    height: 280px;
+    width: 250px;         
+    height: 250px;
+    margin-top: 10%;
+    margin-left: 10%;
     border-radius: 50%;
     border: 8px solid white; 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); 
@@ -205,6 +227,8 @@ main{
     height: 100%;
     object-fit: cover;   
 }
+
+
 
 .personal{
     margin: 20px auto;
@@ -559,3 +583,10 @@ footer {
     box-sizing: border-box;
 
 }
+
+/* Responsive adjustments for smaller screens
+@media (max-width: 768px) {
+    header{
+
+    }
+} */
