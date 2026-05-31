@@ -147,18 +147,34 @@ header{
     }
 
     .dropdowns{
-        display:none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        width: 200px;
+            align-items: center;
+            display:none;
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            width:90%;
+            /* height: 120px; */
+            /* width: 25%; */
 
-        background-color: white;
-        border-radius: 8px;
+            background-color: white;
+            border-radius: 8px;
+        }
+    .dropdown{
+        align-items: center;
+        justify-content: center;
+        width:90%;
+        padding: 40px;
     }
     .dropdowns.open{
         display: flex;
+    }
+    .hamburger:hover {
+
+        background-color: rgb(194, 194, 231);
+            
+        
+        display: block;
     }
 }
 /* Add scroll margins so the fixed header doesn't cover section titles */
@@ -183,7 +199,7 @@ header{
 
 .dropdown:hover {
     background-color: rgb(194, 194, 231);
-    display: block;
+    /* display: block; */
 }
 
 main{
